@@ -1,3 +1,5 @@
-FROM alpine:3.18
-
-CMD ["echo", "Hola desde Docker Hub 🚀"]
+FROM ubuntu:latest
+RUN apt-get -y update
+RUN apt-get -y upgrade
+RUN apt-get -y install htop
+CMD ["bash"]
